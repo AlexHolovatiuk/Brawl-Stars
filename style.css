@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-weight:bold;
+}
+
+
+/* --- header ---*/
+
+
+header{
+	height: 705px;
+	position: relative;
+	background-size: cover;
+	background-image: url('images/zastavka.jpg');
+
+}
+nav{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+header nav ul{
+	display: flex;
+	flex-direction: column;
+}
+header nav li{
+	list-style: none;
+	margin: 20px 30px;
+	font-size: 28pt;
+	background-color: #33ff44;
+	border-radius: 10%;
+	
+}
+header li a{
+	text-decoration: none;
+	color:#000000;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 1500;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+.BS{
+	position: absolute;
+    left: 1160px;
+    font-size: 56px;
+    white-space: nowrap;
+    top: 525px;
+	text-shadow: #f4f4f4 2px 2px 2px;
+}
+
+
+/* --- about game --- */
+
+
+.about_game{
+	height: 705px;
+	position: relative;
+}
+.mad_img{
+	width: 100%;
+	position: absolute;
+}
+.accordion {
+    border: 2px solid #00ccbe;
+    width: 800px;
+	margin: 0px auto;
+	background-image: linear-gradient(to bottom right, #00dbfd 0%, #9ff5e0 60%, #33ff44 85%, #99ff00 100%);
+}
+.accordion ul{
+	list-style: none;
+	position: absolute;
+    width: 800px;
+	top: 160px;
+}
+.accordion ul li{
+	position: relative;
+}
+.accordion_header{
+	height: 90px;
+    padding: 10px 25px;
+	cursor: pointer;
+	background: #00ccbe;
+    border-top: 1px solid #00ccbe;
+    border-bottom: 1px solid #00ccbe;
+	display: flex;
+	align-items: center;
+}
+.accordion_header h2 {
+    font-size: 30px;
+	color: #f4f4f4;
+	padding-left: 20px;    
+}
+.msg {
+	max-height: 0;
+	opacity: 0;
+	transform: translate(0, 50%);
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+.accordion ul li input:checked ~ div.msg {
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.msg p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  padding: 10px 20px;
+}
+.accordion ul li input{
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+  opacity: 0;
+}
+.accordion ul li span {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	display: block;
+	width: 9px;
+	height: 9px;
+}
+.accordion ul li span:before, .accordion ul li span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #eee;
+  width: 3px;
+  height: 9px;
+  transition: all 0.5s ease-in-out;
+}
+.accordion ul li span:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accordion ul li span:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+.accordion ul li input:checked ~ span:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accordion ul li input:checked ~ span:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+
+/* --- about_pers --- */
+
+.about_pers{
+	position: relative;
+}
+.pers_img{
+	width: 100%;
+	position: absolute;
+	height: 705px;
+}
+.dino{
+	position: absolute;
+	background-color: white;
+	width: 550px;
+	top: 20px;
+	left: 40px;
+	display: flex;
+	text-align: center;
+	border-radius: 5%;
+}
+.sheli{
+	position: absolute;
+	background-color: white;
+	width: 550px;
+	top: 361px;
+	left: 40px;
+	display: flex;
+	text-align: center;
+	border-radius: 5%;
+}
+.spaik{
+	position: absolute;
+	background-color: white;
+	width: 550px;
+	top: 20px;
+	left: 925px;
+	display: flex;
+	text-align: center;
+	border-radius: 5%;
+}
+.tara{
+	position: absolute;
+	background-color: white;
+	width: 550px;
+	top: 361px;
+    left: 925px;
+	display: flex;
+	text-align: center;
+	border-radius: 5%;
+
+}
+.dino_i{
+	height: 250px;
+	width: 270px;
+}
+.sheli_i{
+	height: 250px;
+	width: 329px;
+}
+.spaik_i{
+	height: 250px;
+	width: 329px;
+}
+.tara_i{
+	height: 250px;
+	width: 329px;
+}
+.p1{
+	display: flex;
+	align-items: center;
+}
+
+
+/* --- about_cybersport --- */
+
+
+.about_cybersport{
+	position: relative;
+	margin-top: 705px;
+}
+.kiber_img{
+	width: 100%;
+	position: absolute;
+	height: 705px;
+}
+.kiber_p{
+	position: absolute;
+	
+}
+iframe{
+	position: absolute;
+	top: 180px;
+    left: 820px;
+}
+.txt_p{
+	position: absolute;
+	width: 500px;
+	height: 230px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	border-radius: 10%;
+	top: 233px;
+    left: 222px;
+}
+.up{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
